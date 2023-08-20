@@ -5,114 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bose</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="./index.html" class="header-logo">
-            <img src="./images/logo.png" alt="logo" class="header-img">
-        </a>
-        <nav class="header-navigation">
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="./index.html" class="header-link">Characteristics</a>
-                </li>
-                <li class="header-item">
-                    <a href="./index.html" class="header-link">History</a>
-                </li>
-                <li class="header-item">
-                    <a href="./index.html" class="header-link">Reviews</a>
-                </li>
-                <li class="header-item">
-                    <a href="./index.html" class="header-link">Payment and delivery</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a class="header-logo" href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="16" viewBox="0 0 130 16" fill="none">
+                    <g clip-path="url(#clip0_35_8)">
+                        <path
+                            d="M105.309 2.52351H127.783L130.001 0.00634766H97.8175L88.8877 15.2289H109.744L111.242 12.7118H99.3158L101.593 8.8763H113.519L114.958 6.35915H103.091L105.309 2.52351ZM88.1086 6.35915H79.2387L80.677 3.90199C81.2764 2.88313 81.8157 2.52351 82.7147 2.52351C83.6138 2.52351 83.9132 3.24275 83.434 4.1418H92.4835L93.3826 2.52351C94.0418 1.32483 94.0418 0.00634766 92.4237 0.00634766H76.4819C75.0436 0.00634766 73.9048 0.186158 73.0657 1.56464L70.2489 6.35915C69.4699 7.73763 69.5299 8.8763 71.4476 8.8763H80.617L79.1187 11.5133C78.6993 12.2325 78.1596 12.7118 76.9013 12.7118C75.8225 12.7118 75.8825 11.9925 76.3619 11.2735H67.3721L66.2933 13.0714C65.6342 14.2101 66.1735 15.2289 67.7316 15.2289H83.5536C84.9919 15.2289 86.2503 14.5697 86.9698 13.371L89.6666 8.8763C90.2662 7.73763 89.9664 6.35915 88.1086 6.35915Z"
+                            fill="#E7E7E7"></path>
+                        <path
+                            d="M126.611 2.96701C125.88 2.96701 125.287 3.54199 125.287 4.24441C125.287 4.96136 125.88 5.53634 126.611 5.53634C127.339 5.53634 127.929 4.96136 127.929 4.24441C127.929 3.54199 127.339 2.96701 126.611 2.96701ZM126.611 5.28525C126.014 5.28525 125.538 4.83028 125.538 4.24441C125.538 3.6767 126.014 3.2181 126.611 3.2181C127.201 3.2181 127.678 3.6767 127.678 4.24441C127.678 4.83028 127.201 5.28525 126.611 5.28525ZM67.6713 0.00634766H54.1268C52.2689 0.00634766 49.8716 0.00634766 48.4333 2.52351L42.4401 12.7118C41.601 14.0902 42.3203 15.2289 43.8784 15.2289H59.6404C61.2587 15.2289 62.2773 14.7495 63.536 12.7118L69.5292 2.52351C70.3081 1.20502 69.1096 0.00634766 67.6713 0.00634766ZM60.06 3.90199L55.5651 11.5133C54.9657 12.5921 54.4264 12.7118 53.048 12.7118C51.6695 12.7118 51.3098 12.2323 51.7295 11.5133L56.2842 3.90199C56.9434 2.76332 57.7225 2.52351 58.8611 2.52351C60.0002 2.52351 60.6592 2.88313 60.06 3.90199ZM43.9384 0.00634766H26.5581L19.0668 12.7118H2.52576L0 15.2289H35.9077C38.125 15.2289 38.8443 14.15 39.3237 13.3112L41.1216 10.1946C41.601 9.35555 41.601 8.39668 40.6422 7.85744C41.6029 7.85744 42.9195 7.1982 43.6988 5.81972L45.4967 2.76332C46.3955 1.26483 45.3169 0.00634766 43.9384 0.00634766ZM35.0086 10.2546L34.1096 11.6929C33.8699 12.1725 33.4503 12.7118 32.4315 12.7118H27.9966L30.2754 8.8763H34.5892C35.3682 8.8763 35.3682 9.59555 35.0086 10.2546ZM38.7843 3.90199L37.8852 5.34028C37.6454 5.81972 37.226 6.35915 36.2071 6.35915H31.7722L34.0496 2.52351H38.3646C39.1439 2.52351 39.1439 3.24275 38.7843 3.90199Z"
+                            fill="#E7E7E7"></path>
+                        <path
+                            d="M127.288 3.90979C127.288 3.78979 127.233 3.66233 127.124 3.60042C127.011 3.53851 126.888 3.53125 126.764 3.53125H126.119V4.96878H126.338V4.30648H126.597L127.019 4.96878H127.27L126.822 4.30648C127.084 4.29922 127.288 4.19355 127.288 3.90979ZM126.578 4.12801H126.338V3.69482H126.72C126.906 3.69482 127.069 3.72023 127.069 3.90597C127.069 4.16451 126.786 4.12801 126.578 4.12801Z"
+                            fill="#E7E7E7"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_35_8">
+                            <rect width="130" height="15.236" fill="white" transform="translate(0 -0.000488281)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <nav class="header-navigation">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a class="header-link" href="./index.html">Characteristics</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link" href="./index.html">History</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link" href="./index.html">Reviews</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link" href="./index.html">Payment and delivery</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <p class="hero-text">Noise cancellation headphones
-                that are capable for a lot of things</p>
-            <p class="hero-text">Up to 20 hours
-                of playback</p>
-            <h1 class="hero-title">Headphones Bose NC 700</h1>
-            <button class="hero-btn">order</button>
-            <img src="./images/hero-1.jpg" alt="photo of a headphones" class="hero-img">
+            <div class="container">
+                <p class="hero-text">Noise cancellation headphones
+                    that are capable for a lot of things</p>
+                <p class="hero-text">Up to 20 hours
+                    of playback</p>
+                <h1 class="hero-title">Headphones Bose NC 700</h1>
+                <button class="hero-btn">order</button>
+                <img class="hero-img" src="./images/hero-1.jpg" alt="photo of a headphones">
+            </div>
         </section>
         <section class="comfort">
-            <img src="./images/comfort-1.jpg" alt="photo of a persone" class="comfort-img">
-            <h2 class="comfort-tite">Premium design
-                and comfort</h2>
-            <ul class="comfort-list">
-                <li class="comfort-item">
-                    <h3 class="comfort-subtitle">11 levels of noise reduction</h3>
-                    <p class="comfort-description">With the new Bose Noise Canceling Headphone 700, you can smoothly
-                        increase or
-                        decrease the level of noise cancellation. You can be heard perfectly and you hear the
-                        interlocutor
-                        clearly, even in a noisy environment!</p>
-                </li>
-                <li class="comfort-item">
-                    <h3 class="comfort-subtitle">Comfort up to max level</h3>
-                    <p class="comfort-description">Stylish, lightweight stainless steel headband with soft, angled cups
-                        of
-                        headphones for comfortable seating. The inner side is made of soft gel lining that fits well to
-                        the
-                        head.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <img class="comfort-img" src="./images/comfort-1.jpg" alt="photo of a persone">
+                <h2 class="comfort-tite">Premium design
+                    and comfort</h2>
+                <ul class="comfort-list">
+                    <li class="comfort-item">
+                        <h3 class="comfort-subtitle">11 levels of noise reduction</h3>
+                        <p class="comfort-description">With the new Bose Noise Canceling Headphone 700, you can smoothly
+                            increase or decrease the level of noise cancellation. You can be heard perfectly and you
+                            hear the interlocutor clearly, even in a noisy environment!</p>
+                    </li>
+                    <li class="comfort-item">
+                        <h3 class="comfort-subtitle">Comfort up to max level</h3>
+                        <p class="comfort-description">Stylish, lightweight stainless steel headband with soft, angled
+                            cups of headphones for comfortable seating. The inner side is made of soft gel lining that
+                            fits well to the head.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="advantages">
-            <h2 class="advantages-title">capable of so much</h2>
-            <ul class="advantages-list">
-                <li class="advantages-item">
-                    <p class="advantages-text">Ability to receive calls</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-text">Rich and powerful sound</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-text">Active noise cancellation option</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-text">Unsurpassed microphone system</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-text">Support of voice assistants</p>
-                </li>
-                <li class="advantages-item">
-                    <p class="advantages-text">Bose AR Augmented Reality Audio Platform</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="advantages-title">capable of so much</h2>
+                <ul class="advantages-list">
+                    <li class="advantages-item">
+                        <p class="advantages-text">Ability to receive calls</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-text">Rich and powerful sound</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-text">Active noise cancellation option</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-text">Unsurpassed microphone system</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-text">Support of voice assistants</p>
+                    </li>
+                    <li class="advantages-item">
+                        <p class="advantages-text">Bose AR Augmented Reality Audio Platform</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="silence">
-            <h2 class="silence-title">The luxury of silence</h2>
-            <ul class="silence-list">
-                <li class="silence-item">
-                    <h3 class="silence-subtitle">Maximum enjoyment</h3>
-                    <p class="silence-description">In order to create a comfortable atmosphere - raise
-                        the level by level from the "transparent" mode to the maximum blocking of sounds. The
-                        conversation mode can be activated in one click using a special button.</p>
-                </li>
-                <li class="silence-item">
-                    <h3 class="silence-subtitle">Crystal sound</h3>
-                    <p class="silence-description">The speaker system and brand name active equalizer are able to
-                        provide high-quality and powerful sound at any volume level. You can be sure of no distortion
-                        and crystal clear at high and low frequencies.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <h2 class="silence-title">The luxury of silence</h2>
+                <ul class="silence-list">
+                    <li class="silence-item">
+                        <h3 class="silence-subtitle">Maximum enjoyment</h3>
+                        <p class="silence-description">In order to create a comfortable atmosphere - raise
+                            the level by level from the "transparent" mode to the maximum blocking of sounds. The
+                            conversation mode can be activated in one click using a special button.</p>
+                    </li>
+                    <li class="silence-item">
+                        <h3 class="silence-subtitle">Crystal sound</h3>
+                        <p class="silence-description">The speaker system and brand name active equalizer are able to
+                            provide high-quality and powerful sound at any volume level. You can be sure of no
+                            distortion
+                            and crystal clear at high and low frequencies.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="technology">
-            <h2 class="technology-title">Bose AR</h2>
-            <h3 class="technology-subtitle">Brand name technology</h3>
-            <p class="technology-description">Bose AR is a unique audio platform augmented reality, that opens before
-                you new facets of sound. It allows you
-                to stay connected to the real world and immerse yourself in the virtual universe
-                at the same time.</p>
-            <img src="./images/technology-1.jpg" alt="photo of a persone" class="technology-img">
+            <div class="container">
+                <h2 class="technology-title">Bose AR</h2>
+                <h3 class="technology-subtitle">Brand name technology</h3>
+                <p class="technology-description">Bose AR is a unique audio platform augmented reality, that opens
+                    before
+                    you new facets of sound. It allows you
+                    to stay connected to the real world and immerse yourself in the virtual universe
+                    at the same time.</p>
+                <img class="technology-img" src="./images/technology-1.jpg" alt="photo of a persone">
+            </div>
         </section>
         <section class="guarantees">
-            <img src="./images/guarantees-1.jpg" alt="" class="guarantees-img">
+            <img class="guarantees-img" src="./images/guarantees-1.jpg" alt>
             <h2 class="guarantees-title">Guarantees</h2>
             <ul class="guarantees-list">
                 <li class="guarantees-item">
@@ -139,12 +171,19 @@
                 <p class="history-text">From Amar's point of view, the sound was
                     so flat and unnatural that it was better not to listen to the music at all than to listen to it in
                     such a distorted form.</p>
-                <img src="./images/history-1.jpg" alt="photo of a man" class="history-photo1">
-                <img src="./images/history-2.jpg" alt="photo of a man" class="history-photo2">
+                <img class="history-photo1" src="./images/history-1.jpg" alt="photo of a man">
+                <img class="history-photo2" src="./images/history-2.jpg" alt="photo of a man">
                 <p class="history-text">Bose's frustration grew into a firm determination to build audio equipments that
                     would reproduce sound
                     with impeccable accuracy and naturalness</p>
-                <img src="./images/history-3.png" alt="quotes" class="history-img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="25" viewBox="0 0 34 25" fill="none">
+                    <path
+                        d="M0 12.0397V0H13.9651V9.06516C13.9651 18.508 9.31007 23.8196 0 25V20.0425C2.35151 19.4287 3.95918 18.5316 4.823 17.3513C5.73481 16.1709 6.28669 14.4004 6.47865 12.0397H0Z"
+                        fill="#DF3D3A"></path>
+                    <path
+                        d="M20.0349 12.0397V0H34V9.06516C34 18.508 29.345 23.8196 20.0349 25V20.0425C22.3864 19.4287 23.9941 18.5316 24.8579 17.3513C25.7697 16.1709 26.3216 14.4004 26.5136 12.0397H20.0349Z"
+                        fill="#DF3D3A"></path>
+                </svg>
                 <h3 class="history-subtitle">Never stop dreaming. Always dream of the best, and think about how to
                     achieve it.</h3>
                 <p class="history-author">Amar Bose is a company founder</p>
@@ -153,7 +192,7 @@
         <section class="reviews">
             <video src="./videos/reviws.mp4" controls poster="./images/video-poster.jpg"></video>
             <h2 class="reviws-title">reviews</h2>
-            <a href="https://www.youtube.com/watch?v=VqP11Ma_2Fk" class="reviews-link" target="blank">Bose
+            <a class="reviews-link" href="https://www.youtube.com/watch?v=VqP11Ma_2Fk" target="blank">Bose
                 Сorporation</a>
             <p class="reviws-description">Critically acclaimed for their powerful noise cancelling, astonishing sound,
                 and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect
@@ -212,29 +251,34 @@
             <form class="order-form">
                 <ul class="order-images">
                     <li class="order-item1">
-                        <img src="" alt="" class="order-img1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <circle cx="35" cy="35" r="35" fill="#1D1D1D"></circle>
+                            <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8"></circle>
+                            <circle cx="35" cy="35" r="26" fill="black" stroke="#DF3D3A" stroke-width="2"></circle>
+                        </svg>
                     </li>
                     <li class="order-item1">
-                        <img src="" alt="" class="order-img1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <circle cx="35" cy="35" r="35" fill="white" fill-opacity="0.8"></circle>
+                            <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8"></circle>
+                            <circle cx="35" cy="35" r="27" fill="white" fill-opacity="0.8"></circle>
+                        </svg>
                     </li>
                 </ul>
                 <ul class="order-list">
                     <li class="order-item2">
-                        <p class="order-text"></p>
-                        <img src="" alt="" class="order-img2">
+                        <p class="order-text">Availability in stores</p>
                     </li>
                     <li class="order-item2">
-                        <p class="order-text"></p>
-                        <img src="" alt="" class="order-img2">
+                        <p class="order-text">Characteristics</p>
                     </li>
                     <li class="order-item2">
-                        <p class="order-text"></p>
-                        <img src="" alt="" class="order-img2">
+                        <p class="order-text">Payment and delivery methods</p>
                     </li>
                 </ul>
-                <p class="order-price"></p>
-                <button class="order-btn"></button>
-                <img src="" alt="" class="order-photo">
+                <p class="order-price">14 999 UAH</p>
+                <button class="order-btn">order</button>
+                <img class="order-photo" src="./images/order-1.png" alt="photo of a headphones">
             </form>
         </section>
     </main>
